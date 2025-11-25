@@ -1,0 +1,213 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "yeadDkMiISin"
+      },
+      "source": [
+        "# Gemini API: Prompting Quickstart\n",
+        "\n",
+        "<a target=\"_blank\" href=\"https://colab.research.google.com/github/google-gemini/cookbook/blob/main/quickstarts/Prompting.ipynb\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" height=30/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [],
+      "metadata": {
+        "id": "yWiM1NH6SJsm"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "nombre = \"Luis\"\n",
+        "edad = 22\n",
+        "altura = 1.75\n",
+        "estudiante = True\n",
+        "\n",
+        "print(\"Tu nombre es:\", nombre)\n",
+        "print(\"Tu edad es:\", edad)\n",
+        "print(\"Tu altura es:\", altura)\n",
+        "print(\"¿Eres estudiante?\", estudiante)\n",
+        "\n",
+        "'''\n",
+        "Cómo nombrar variables correctamente\n",
+        "\n",
+        "Cómo combinar texto + variables\n",
+        "\n",
+        "Cómo imprimir varias líneas\n",
+        "\n",
+        "Uso correcto de comillas y espacio\n",
+        "\n",
+        "'''"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 122
+        },
+        "id": "9CmkVzNKSKDN",
+        "outputId": "ebe38bb5-2ce6-4eeb-f802-97f36e1e4b93"
+      },
+      "execution_count": 66,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Tu nombre es: Luis\n",
+            "Tu edad es: 22\n",
+            "Tu altura es: 1.75\n",
+            "¿Eres estudiante? True\n"
+          ]
+        },
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "'\\nCómo nombrar variables correctamente\\n\\nCómo combinar texto + variables\\n\\nCómo imprimir varias líneas\\n\\nUso correcto de comillas y espacio\\n\\n'"
+            ],
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            }
+          },
+          "metadata": {},
+          "execution_count": 66
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "'''\n",
+        "> = mayor que\n",
+        "< = menor que\n",
+        "== = igual que\n",
+        "!= = diferente de\n",
+        ">= = mayor o igual que\n",
+        "<= = menor o igual\n",
+        "'''\n",
+        "\n",
+        "nombre = \"Luis Lopez\"\n",
+        "edad = 22\n",
+        "distancia = int (25)\n",
+        "estudiante = True\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "if distancia <= 20:\n",
+        "    print(\"Te esforzaras mas la proxima!\")\n",
+        "\n",
+        "else:\n",
+        "    print('Que bien lo hiciste!')\n",
+        "\n",
+        "\n",
+        "print(\"Tu nombre es:\", nombre)\n",
+        "print(\"Tu edad es:\", edad)\n",
+        "print(\"Tu altura es:\", altura)\n",
+        "print(\"¿Eres estudiante?\", estudiante)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "mlTpNm9vSSZm",
+        "outputId": "21ff1102-2b9b-4aa0-f50e-acae2cd78176"
+      },
+      "execution_count": 67,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Que bien lo hiciste!\n",
+            "Tu nombre es: Luis Lopez\n",
+            "Tu edad es: 22\n",
+            "Tu altura es: 1.75\n",
+            "¿Eres estudiante? True\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "Hooby = 'correr'\n",
+        "comida_fav = 'pizza'\n",
+        "ditancia = int (30)\n",
+        "\n",
+        "print('cuales tu hobby favorito?')\n",
+        "\n",
+        "if HOOBY == 'correr':\n",
+        "  print(HOOBY)\n",
+        "else:\n",
+        "  print('no es correr')\n",
+        "\n",
+        "print('Que te gusta comer?')\n",
+        "\n",
+        "if comida_fav != 'pizza':\n",
+        "    print('Debes mejorar tu alimentacion')\n",
+        "else:\n",
+        "    print('No sabia que era wilma!')\n",
+        "\n",
+        "print('Cuanto has corrido este fin de semana?')\n",
+        "\n",
+        "if distancia >= 30:\n",
+        "    print('Mereces un banquete!')\n",
+        "else:\n",
+        "    print('Te esforzaras mas la proxima!')\n"
+      ],
+      "metadata": {
+        "id": "HGpgds1KYgm7",
+        "outputId": "7ec57223-a69e-4cc5-f4cb-3921902f9d74",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 71,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "cuales tu hobby favorito?\n",
+            "no es correr\n",
+            "Que te gusta comer?\n",
+            "Comeras wilma!\n",
+            "Cuanto has corrido este fin de semana?\n",
+            "Te esforzaras mas la proxima!\n"
+          ]
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "colab": {
+      "name": "Prompting.ipynb",
+      "provenance": []
+    },
+    "google": {
+      "image_path": "/static/site-assets/images/docs/logo-python.svg",
+      "keywords": [
+        "examples",
+        "gemini",
+        "beginner",
+        "googleai",
+        "quickstart",
+        "python",
+        "text",
+        "chat",
+        "vision",
+        "embed"
+      ]
+    },
+    "kernelspec": {
+      "display_name": "Python 3",
+      "name": "python3"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 0
+}
